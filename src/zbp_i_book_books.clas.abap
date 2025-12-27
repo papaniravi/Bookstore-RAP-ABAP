@@ -1,0 +1,8 @@
+CLASS zbp_i_book_books DEFINITION
+  PUBLIC
+  ABSTRACT
+  FINAL FOR BEHAVIOR OF zi_book_books.
+ENDCLASS.
+
+CLASS zbp_i_book_books IMPLEMENTATION.
+ENDCLASS.

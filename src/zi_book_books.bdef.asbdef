@@ -1,0 +1,93 @@
+managed implementation in class zbp_i_book_books unique;
+strict ( 2 );
+with draft;
+
+define behavior for ZI_BOOK_BOOKS alias Books
+persistent table zbook_books
+draft table zbook_books_d
+etag master ModifiedAt
+lock master total etag ModifiedAt
+authorization master ( global )
+{
+  field ( readonly )
+    Id,
+    CreatedAt,
+    CreatedBy,
+    ModifiedAt,
+    ModifiedBy;
+
+  field ( mandatory )
+    Title;
+
+  create;
+  update;
+  delete;
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare;
+
+  action addStock result [1] $self;
+  action changePublishDate parameter ZD_CHANGE_DATE result [1] $self;
+  action changeStatus parameter ZD_CHANGE_STATUS result [1] $self;
+
+  association _Chapters { create; with draft; }
+
+  mapping for zbook_books
+  {
+    Id = id;
+    Title = title;
+    AuthorId = author_id;
+    GenreCode = genre_code;
+    PublishedAt = published_at;
+    Pages = pages;
+    Price = price;
+    CurrencyCode = currency_code;
+    Stock = stock;
+    StatusCode = status_code;
+    CreatedAt = created_at;
+    CreatedBy = created_by;
+    ModifiedAt = modified_at;
+    ModifiedBy = modified_by;
+  }
+}
+
+define behavior for ZI_BOOK_CHAPTERS alias Chapters
+persistent table zbook_chapters
+draft table zbook_chap_d
+etag master ModifiedAt
+lock dependent by _Book
+authorization dependent by _Book
+{
+  field ( readonly )
+    Id,
+    BookId,
+    CreatedAt,
+    CreatedBy,
+    ModifiedAt,
+    ModifiedBy;
+
+  field ( mandatory )
+    Title,
+    Number;
+
+  update;
+  delete;
+
+  association _Book { with draft; }
+
+  mapping for zbook_chapters
+  {
+    Id = id;
+    BookId = book_id;
+    Number = number;
+    Title = title;
+    Pages = pages;
+    CreatedAt = created_at;
+    CreatedBy = created_by;
+    ModifiedAt = modified_at;
+    ModifiedBy = modified_by;
+  }
+}

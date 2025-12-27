@@ -1,0 +1,8 @@
+CLASS zbp_i_book_authors DEFINITION
+  PUBLIC
+  ABSTRACT
+  FINAL FOR BEHAVIOR OF zi_book_authors.
+ENDCLASS.
+
+CLASS zbp_i_book_authors IMPLEMENTATION.
+ENDCLASS.

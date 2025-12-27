@@ -1,0 +1,35 @@
+managed implementation in class zbp_i_book_authors unique;
+strict ( 2 );
+
+define behavior for ZI_BOOK_AUTHORS alias Authors
+persistent table zbook_authors
+etag master ModifiedAt
+lock master
+authorization master ( global )
+{
+  field ( readonly )
+    Id,
+    CreatedAt,
+    CreatedBy,
+    ModifiedAt,
+    ModifiedBy;
+
+  field ( mandatory )
+    Name;
+
+  create;
+  update;
+  delete;
+
+  association _Books;
+
+  mapping for zbook_authors
+  {
+    Id = id;
+    Name = name;
+    CreatedAt = created_at;
+    CreatedBy = created_by;
+    ModifiedAt = modified_at;
+    ModifiedBy = modified_by;
+  }
+}
