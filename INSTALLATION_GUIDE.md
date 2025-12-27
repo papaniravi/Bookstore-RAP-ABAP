@@ -71,7 +71,7 @@ define table zbook_books {
   author_id : sysuuid_x16;
   genre_code : abap.char(20);
   published_at : abap.dats;
-  pages : abap.int4;
+  pages1 : abap.int4;
   price : abap.dec(9,2);
   currency_code : abap.cuky;
   stock : abap.int4;
@@ -91,9 +91,9 @@ define table zbook_chapters {
   key client : abap.clnt not null;
   key id : sysuuid_x16 not null;
   book_id : sysuuid_x16;
-  number : abap.int4;
+  number1 : abap.int4;
   title : abap.char(100);
-  pages : abap.int4;
+  pages1 : abap.int4;
   created_at : timestampl;
   created_by : abap.char(12);
   modified_at : timestampl;
@@ -112,7 +112,7 @@ define table zbook_books_d {
   author_id : sysuuid_x16;
   genre_code : abap.char(20);
   published_at : abap.dats;
-  pages : abap.int4;
+  pages1 : abap.int4;
   price : abap.dec(9,2);
   currency_code : abap.cuky;
   stock : abap.int4;
@@ -133,9 +133,9 @@ define table zbook_chap_d {
   key mandt : abap.clnt not null;
   key id : sysuuid_x16 not null;
   book_id : sysuuid_x16;
-  number : abap.int4;
+  number1 : abap.int4;
   title : abap.char(100);
-  pages : abap.int4;
+  pages1 : abap.int4;
   created_at : timestampl;
   created_by : abap.char(12);
   modified_at : timestampl;

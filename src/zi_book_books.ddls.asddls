@@ -13,7 +13,7 @@ define root view entity ZI_BOOK_BOOKS
       author_id     as AuthorId,
       genre_code    as GenreCode,
       published_at  as PublishedAt,
-      pages         as Pages,
+      pages1        as Pages,
       @Semantics.amount.currencyCode: 'CurrencyCode'
       price         as Price,
       currency_code as CurrencyCode,
