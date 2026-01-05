@@ -3,7 +3,7 @@ define service ZBOOK_UI_BOOKSTORE {
   expose ZC_BOOK_BOOKS as Books;
   expose ZC_BOOK_CHAPTERS as Chapters;
   expose ZC_BOOK_AUTHORS as Authors;
-  expose ZC_BOOK_GENRES as GenresVH;
-  expose ZC_BOOK_STATUS as BookStatus;
+  expose ZI_BOOK_GENRES as GenresVH;
+  expose ZI_BOOK_STATUS as BookStatus;
 }
 
