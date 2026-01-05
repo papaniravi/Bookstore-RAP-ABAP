@@ -29,3 +29,4 @@ define root view entity ZC_BOOK_BOOKS
       _Status,
       _Currency
 }
+

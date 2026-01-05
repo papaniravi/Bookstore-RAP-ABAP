@@ -6,3 +6,4 @@ define view entity ZI_BOOK_GENRES
   key code        as Code,
       description as Description
 }
+

@@ -20,3 +20,4 @@ define view entity ZI_BOOK_CHAPTERS
 
       _Book
 }
+

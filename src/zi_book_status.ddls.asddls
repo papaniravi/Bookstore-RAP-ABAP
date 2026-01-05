@@ -7,3 +7,4 @@ define view entity ZI_BOOK_STATUS
       display_text as DisplayText,
       criticality  as Criticality
 }
+

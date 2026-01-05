@@ -34,3 +34,4 @@ define root view entity ZI_BOOK_BOOKS
       _Status,
       _Currency
 }
+

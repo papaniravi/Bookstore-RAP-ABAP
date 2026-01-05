@@ -6,3 +6,4 @@ ENDCLASS.
 
 CLASS zbp_i_book_authors IMPLEMENTATION.
 ENDCLASS.
+

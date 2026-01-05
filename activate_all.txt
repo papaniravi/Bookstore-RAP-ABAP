@@ -1,0 +1,46 @@
+Objects to activate in order (for manual activation in Eclipse ADT):
+
+Step 1: Activate Interface Views (ZI_*)
+========================================
+1. ZI_BOOK_GENRES
+2. ZI_BOOK_STATUS
+3. ZI_BOOK_AUTHORS
+4. ZI_BOOK_CHAPTERS
+5. ZI_BOOK_BOOKS
+
+Step 2: Activate Abstract Entities (ZD_*)
+=========================================
+6. ZD_CHANGE_DATE
+7. ZD_CHANGE_STATUS
+
+Step 3: Activate Consumption Views (ZC_*)
+==========================================
+8. ZC_BOOK_GENRES
+9. ZC_BOOK_STATUS
+10. ZC_BOOK_AUTHORS
+11. ZC_BOOK_CHAPTERS
+12. ZC_BOOK_BOOKS
+
+Step 4: Activate Behavior Definitions
+======================================
+13. ZI_BOOK_AUTHORS (behavior)
+14. ZI_BOOK_BOOKS (behavior)
+15. ZC_BOOK_AUTHORS (behavior)
+16. ZC_BOOK_BOOKS (behavior)
+
+Step 5: Activate Behavior Implementation Classes
+=================================================
+17. ZBP_I_BOOK_AUTHORS
+18. ZBP_I_BOOK_BOOKS
+
+Step 6: Activate Service Definition
+====================================
+19. ZBOOK_UI_BOOKSTORE
+
+IMPORTANT: If activation still fails with "PAGES is unknown" or "NUMBER is unknown":
+1. In SAP GUI, go to SE11
+2. Display the CDS views ZC_BOOK_BOOKS and ZC_BOOK_CHAPTERS
+3. Delete the active versions
+4. Return to Eclipse and reactivate
+
+The source code has been corrected to use Pages1 and Number1.

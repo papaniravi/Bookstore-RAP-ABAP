@@ -7,3 +7,4 @@ define view entity ZC_BOOK_GENRES
   key Code,
       Description
 }
+

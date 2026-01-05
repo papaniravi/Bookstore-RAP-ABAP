@@ -14,3 +14,4 @@ define root view entity ZC_BOOK_AUTHORS
 
       _Books : redirected to ZC_BOOK_BOOKS
 }
+

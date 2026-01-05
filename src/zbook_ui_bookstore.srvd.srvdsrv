@@ -6,3 +6,4 @@ define service ZBOOK_UI_BOOKSTORE {
   expose ZC_BOOK_GENRES as GenresVH;
   expose ZC_BOOK_STATUS as BookStatus;
 }
+

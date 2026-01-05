@@ -16,3 +16,4 @@ define view entity ZC_BOOK_CHAPTERS
 
       _Book : redirected to parent ZC_BOOK_BOOKS
 }
+

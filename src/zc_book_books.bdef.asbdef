@@ -30,3 +30,4 @@ use etag
 
   use association _Book { with draft; }
 }
+

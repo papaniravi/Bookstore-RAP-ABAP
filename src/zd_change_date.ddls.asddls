@@ -3,3 +3,4 @@ define abstract entity ZD_CHANGE_DATE
 {
   newDate : abap.dats;
 }
+

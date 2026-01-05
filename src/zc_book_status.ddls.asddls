@@ -8,3 +8,4 @@ define view entity ZC_BOOK_STATUS
       DisplayText,
       Criticality
 }
+
