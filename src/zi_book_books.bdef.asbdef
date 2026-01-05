@@ -42,7 +42,7 @@ authorization master ( global )
     AuthorId = author_id;
     GenreCode = genre_code;
     PublishedAt = published_at;
-    Pages = pages;
+    Pages1 = pages1;
     Price = price;
     CurrencyCode = currency_code;
     Stock = stock;
@@ -71,7 +71,7 @@ authorization dependent by _Book
 
   field ( mandatory )
     Title,
-    Number;
+    Number1;
 
   update;
   delete;
@@ -82,9 +82,9 @@ authorization dependent by _Book
   {
     Id = id;
     BookId = book_id;
-    Number = number;
+    Number1 = number1;
     Title = title;
-    Pages = pages;
+    Pages1 = pages1;
     CreatedAt = created_at;
     CreatedBy = created_by;
     ModifiedAt = modified_at;

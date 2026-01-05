@@ -6,9 +6,9 @@ define view entity ZI_BOOK_CHAPTERS
 {
   key id          as Id,
       book_id     as BookId,
-      number1     as Number,
+      number1     as Number1,
       title       as Title,
-      pages1      as Pages,
+      pages1      as Pages1,
       @Semantics.systemDateTime.createdAt: true
       created_at  as CreatedAt,
       @Semantics.user.createdBy: true

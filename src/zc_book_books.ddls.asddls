@@ -13,7 +13,7 @@ define root view entity ZC_BOOK_BOOKS
       AuthorId,
       GenreCode,
       PublishedAt,
-      Pages,
+      Pages1,
       Price,
       CurrencyCode,
       Stock,

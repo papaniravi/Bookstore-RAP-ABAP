@@ -6,9 +6,9 @@ define view entity ZC_BOOK_CHAPTERS
 {
   key Id,
       BookId,
-      Number,
+      Number1,
       Title,
-      Pages,
+      Pages1,
       CreatedAt,
       CreatedBy,
       ModifiedAt,
