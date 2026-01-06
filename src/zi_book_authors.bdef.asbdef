@@ -7,12 +7,17 @@ etag master ModifiedAt
 lock master
 authorization master ( global )
 {
+  field ( readonly : update )
+    Id;
+
   field ( readonly )
-    Id,
     CreatedAt,
     CreatedBy,
     ModifiedAt,
     ModifiedBy;
+
+  field ( numbering : managed )
+    Id;
 
   field ( mandatory )
     Name;
@@ -20,8 +25,6 @@ authorization master ( global )
   create;
   update;
   delete;
-
-  association _Books;
 
   mapping for zbook_authors
   {

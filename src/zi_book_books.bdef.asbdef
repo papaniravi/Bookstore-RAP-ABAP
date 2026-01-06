@@ -9,12 +9,17 @@ etag master ModifiedAt
 lock master total etag ModifiedAt
 authorization master ( global )
 {
+  field ( readonly : update )
+    Id;
+
   field ( readonly )
-    Id,
     CreatedAt,
     CreatedBy,
     ModifiedAt,
     ModifiedBy;
+
+  field ( numbering : managed )
+    Id;
 
   field ( mandatory )
     Title;
@@ -61,13 +66,18 @@ etag master ModifiedAt
 lock dependent by _Book
 authorization dependent by _Book
 {
-  field ( readonly )
+  field ( readonly : update )
     Id,
-    BookId,
+    BookId;
+
+  field ( readonly )
     CreatedAt,
     CreatedBy,
     ModifiedAt,
     ModifiedBy;
+
+  field ( numbering : managed )
+    Id;
 
   field ( mandatory )
     Title,
