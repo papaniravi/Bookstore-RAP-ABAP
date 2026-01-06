@@ -1,4 +1,4 @@
-@AccessControl.authorizationCheck: #CHECK
+@AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Bookstore - Chapters (Consumption)'
 @Metadata.allowExtensions: true
 define view entity ZC_BOOK_CHAPTERS

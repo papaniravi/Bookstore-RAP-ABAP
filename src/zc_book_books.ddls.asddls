@@ -1,4 +1,4 @@
-@AccessControl.authorizationCheck: #CHECK
+@AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Bookstore - Books (Consumption)'
 @Metadata.allowExtensions: true
 @Search.searchable: true

@@ -1,4 +1,4 @@
-@AccessControl.authorizationCheck: #CHECK
+@AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Bookstore - Authors'
 define root view entity ZI_BOOK_AUTHORS
   as select from zbook_authors

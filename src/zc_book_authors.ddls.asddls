@@ -1,4 +1,4 @@
-@AccessControl.authorizationCheck: #CHECK
+@AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'Bookstore - Authors (Consumption)'
 @Metadata.allowExtensions: true
 define root view entity ZC_BOOK_AUTHORS
